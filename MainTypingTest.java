@@ -16,22 +16,24 @@ public class MainTypingTest {
             System.out.print("Choose an option: ");
 
             choice = scanner.nextInt();
+            scanner.nextLine(); // Consume newline
 
             switch (choice) {
                 case 1:
-                    Login.start(scanner);       
+                    LoginScreen.login(scanner);     
                     break;
                 case 2:
-                    Register.start(scanner);    
+                    RegisterScreen.register(scanner);;    
                     break;
                 case 3:
-                    TypingTest.start(scanner);  
+                    TypingTest.startTest(scanner);;  
                     break;
                 case 4:
-                    AboutUs.show(scanner);      
+                    AboutUs.showAboutUs();      
                     break;
                 case 5:
                     System.out.println("Goodbye!");
+                    scanner.close();
                     return;
                 default:
                     System.out.println("Invalid choice!\n");

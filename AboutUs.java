@@ -1,4 +1,4 @@
-public public class AboutUs {
+public class AboutUs {
 
     public static void showAboutUs() {
         System.out.println("=========== About Us ===========");

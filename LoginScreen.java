@@ -6,9 +6,7 @@ public class LoginScreen {
     static String savedUsername = "admin";
     static String savedPassword = "1234";
 
-    public static void login() {
-        Scanner sc = new Scanner(System.in);
-
+    public static void login(Scanner sc) {
         System.out.println("=========== Login ===========");
 
         System.out.print("Enter Username: ");
@@ -19,9 +17,9 @@ public class LoginScreen {
 
         // Check login
         if (username.equals(savedUsername) && password.equals(savedPassword)) {
-            System.out.println("✅ Login successful! Welcome " + username);
+            System.out.println("Login successful! Welcome " + username);
         } else {
-            System.out.println("❌ Invalid username or password!");
+            System.out.println("Invalid username or password!");
         }
 
         System.out.println("=============================");
